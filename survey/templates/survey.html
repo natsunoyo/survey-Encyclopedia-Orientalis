@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='survey.css') }}">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap"
+        rel="stylesheet">
+    <title>Survey on East Asian Cultures</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Опитування</h2>
+
+        <form method="POST">
+            <label for="name">Ім'я</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Електронна адреса</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="multiple">Які аспекти східноазійської культури вас цікавлять найбільше? (виберіть хоча б один
+                варіант)</label><br>
+            <input type="checkbox" id="music" name="multiple[]" value="Музика">Музика</input><br>
+            <input type="checkbox" id="art" name="multiple[]" value="Мистецтво">Мистецтво</input><br>
+            <input type="checkbox" id="history" name="multiple[]" value="Історія">Історія</input><br>
+            <input type="checkbox" id="weapons" name="multiple[]" value="Зброя">Зброя</input><br>
+            <input type="checkbox" id="popculture" name="multiple[]" value="Поп-культура">Поп-культура</input><br>
+            <input type="checkbox" id="inventions" name="multiple[]" value="Винаходи">Винаходи</input><br>
+            <input type="checkbox" id="nothing" name="multiple[]" value="Нічого з вище переліченого">Нічого з вище
+            переліченого</input><br><br>
+
+            <label for="japan">Що вам найбільше подобається в Японії?</label><br>
+            <input type="text" id="japan" name="japan" required><br><br>
+
+            <label for="china">Що вас найбільше цікавить в китайській культурі?</label><br>
+            <input type="text" id="china" name="china" required><br><br>
+
+            <label for="country">Яку країну Дальнього Сходу ви б хотіли відвідати?</label><br>
+            <input type="text" id="country" name="country" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

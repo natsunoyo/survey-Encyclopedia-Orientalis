@@ -1,0 +1,39 @@
+body {
+    background: #538462;
+    padding: 0px 40px 40px 40px;
+    font-family: 'Cormorant Garamond';
+    font-size: 25px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+.wrapper {
+    background: #aef6c3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1400px;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+button {
+    border-radius: 0px;
+    background-color: #538462;
+    color: #aef6c3;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1f3b27;
+    color: #75b98a;
+}
+
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+}
